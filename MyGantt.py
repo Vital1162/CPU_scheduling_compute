@@ -91,7 +91,7 @@ def add_process():
     pid_entry.delete(0, tk.END)
     arrival_time_entry.delete(0, tk.END)
     burst_time_entry.delete(0, tk.END)
-    priority_entry.delete(0,tk.END)
+
 
 def run_fcfs():
     global processes
@@ -236,7 +236,6 @@ def reset_all():
     burst_time_entry.delete(0, tk.END)
     time_quantum_entry.delete(0, tk.END)
     time_quantum_entry.insert(0,2)
-    priority_entry.delete(0,tk.END)
     # Clear processes list
     processes.clear()
     processes_listbox.delete(0, tk.END)
@@ -280,7 +279,7 @@ priority_label = ttk.Label(frame, text="Priority (priority preemptive):")
 priority_label.grid(row=4, column=0, padx=5, pady=5)
 priority_entry = ttk.Entry(frame)
 priority_entry.grid(row=4, column=1, padx=5, pady=5)
-
+priority_entry.insert(0,1) #1
 
 
 # Button
