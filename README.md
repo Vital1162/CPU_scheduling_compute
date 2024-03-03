@@ -18,7 +18,7 @@
 ### Some important notes:
 - You need to reset all after each Run algorithm.\
   For example, after you run RR and you can not run the SJF right after in the GUI, you need to "Reset All" to get the input attribute again. (issue)
-- Code still not optimal
+- Code still not optimal yet
 
 
 
