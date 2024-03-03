@@ -39,7 +39,7 @@ def compute_avg_response_time(processes):
     return sum(process.first_exe - process.arrival_time for process in processes)/len(processes)
 
 
-#algo
+#FCFS 
 def fcfs(processes):
     current_time = 0
     gantt_chart = []
@@ -49,8 +49,6 @@ def fcfs(processes):
         gantt_chart.append((current_time, process.completion_time, process.pid))
         current_time = process.completion_time
     return processes, gantt_chart
-
-
 
 
 
@@ -105,7 +103,7 @@ def run_fcfs():
 
 
 
-# SJF Preemptive algorithm
+# SJF Preemptive
 def sjf_preemptive(processes):
     current_time = 0
     remaining_processes = processes[:]
